@@ -1,0 +1,82 @@
+@import url('https://fonts.bunny.net/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Premium Color Palettes matching Apple & Coffee Aesthetics */
+  --color-brand-50: #FAF9F6;
+  --color-brand-100: #F3EFF5;
+  --color-brand-200: #E6DFD4;
+  --color-brand-300: #D8CEBE;
+  --color-brand-400: #BCAE97;
+  --color-brand-500: #8C7853; /* Elegant Gold-Bronze-Coffee */
+  --color-brand-600: #736140;
+  --color-brand-700: #594B32;
+  --color-brand-800: #403523;
+  --color-brand-900: #262015;
+  --color-brand-950: #14100A;
+
+  --color-accent-orange: #E86134; /* Rich Roast Orange CTA */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FAF9F5; /* Premium natural warm off-white background */
+    color: #141311;
+  }
+
+  ::selection {
+    background-color: #E6DFD4;
+    color: #141311;
+  }
+}
+
+/* Glassmorphism Classes for Apple-like Effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(229, 225, 218, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(20, 19, 17, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #141311 30%, #594B32 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-coffee {
+  background: linear-gradient(135deg, #8C7853 0%, #403523 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-premium {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-premium-lg {
+  box-shadow: 0 10px 40px rgba(20, 19, 17, 0.06), 0 1px 4px rgba(20, 19, 17, 0.02);
+}
+
+/* Hide scrollbars for aesthetic carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

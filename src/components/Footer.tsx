@@ -125,7 +125,7 @@ export default function Footer() {
 
       {/* Copy-claim footer line */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-normal text-neutral-400 text-[11px]">
-        <p>© 2026 CuttucutApp. Seluruh hak cipta dilindungi undang-undang.</p>
+        <p>© 2026 CuttocutApp. Seluruh hak cipta dilindungi undang-undang.</p>
         <div className="flex items-center gap-6">
           <a href="#" className="hover:text-neutral-900">Syarat & Ketentuan</a>
           <span>•</span>

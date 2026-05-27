@@ -91,7 +91,7 @@ export default function Navbar() {
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
               <span className="font-extrabold text-xl tracking-tight text-neutral-900">
-                Cuttucut<span className="text-blue-600">App</span>
+                Cuttocut<span className="text-blue-600">App</span>
               </span>
             </a>
 
